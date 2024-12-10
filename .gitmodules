@@ -1,3 +1,3 @@
-[submodule "plugin-somm"]
-	path = plugin-somm
+[submodule "packages/plugin-somm"]
+	path = packages/plugin-somm
 	url = git@github.com:PeggyJV/Eliza_plugin.git
