@@ -44,6 +44,7 @@ import { solanaPlugin } from "@ai16z/plugin-solana";
 import { aptosPlugin, TransferAptosToken } from "@ai16z/plugin-aptos";
 import { flowPlugin } from "@ai16z/plugin-flow";
 import { teePlugin } from "@ai16z/plugin-tee";
+import { sommPlugin } from "plugin-somm";
 import Database from "better-sqlite3";
 import fs from "fs";
 import path from "path";
@@ -380,6 +381,7 @@ export function createAgent(
         evaluators: [],
         character,
         plugins: [
+            sommPlugin,
             bootstrapPlugin,
             getSecret(character, "CONFLUX_CORE_PRIVATE_KEY")
                 ? confluxPlugin
