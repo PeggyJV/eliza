@@ -1177,7 +1177,7 @@ export const generateObjectV2 = async ({
     const apiKey = runtime.token;
 
     try {
-        context = trimTokens(context, max_context_length, model);
+        context = trimTokens(context, max_context_length, "gpt-4o");
 
         const modelOptions: ModelSettings = {
             prompt: context,
